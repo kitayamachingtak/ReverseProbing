@@ -10,23 +10,33 @@ Paper: *Reverse Probing: Supervised Token-level Uncertainty Quantification for
 Large Language Models in Clinical Text*
 
 ## Setup
-
+ 
 ```bash
 pip install -r requirements.txt
+pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz
 ```
-
+ 
+The scispaCy NER model is a separate download and is not on PyPI, so any
+one of them will run, but the paper's numbers use `en_ner_bc5cdr_md`.
+ 
+UMLS and MedDRA vocabularies are optional and off by default. Both need a
+licence, and the pipeline runs on scispaCy NER alone without them.
+ 
+Tested with Python 3.10, CUDA 12, `numpy<2`. numpy 2.x breaks scispaCy 0.6.2.
+ 
 This work accesses the internal activation of LLMs, so API is not useful here. Models here is resolved through the normal Hugging Face cache. 
-
+ 
 ```bash
 export HF_HUB_CACHE=/path/to/huggingface
 ```
-
+ 
 For a model outside that cache, set `MODEL_PATH_<KEY>` instead, upper case with
 dots and dashes replaced by underscores:
-
+ 
 ```bash
 export MODEL_PATH_LLAMA3_1_70B=/path/to/snapshot
 ```
+
 
 ### Data
 
