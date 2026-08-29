@@ -15,8 +15,8 @@ pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/e
 The scispaCy NER model is a separate download and is not on PyPI, so any
 one of them will run, but the paper's numbers use `en_ner_bc5cdr_md`.
  
-UMLS and MedDRA vocabularies are optional and off by default. Both need a
-licence, and the pipeline runs on scispaCy NER alone without them.
+UMLS and MedDRA both need a
+licence.
  
 Tested with Python 3.10, CUDA 12, `numpy<2`. numpy 2.x breaks scispaCy 0.6.2.
  
