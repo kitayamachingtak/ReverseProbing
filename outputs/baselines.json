@@ -1,0 +1,146 @@
+{
+  "Token Entropy": {
+    "mimic": {
+      "Mistral-7B": 0.0669,
+      "BioMistral-7B": 0.0658,
+      "Llama3.1-8B": 0.0776,
+      "OpenBioLLM-8B": 0.0767,
+      "Llama3.1-70B": 0.0753,
+      "OpenBioLLM-70B": 0.0784
+    },
+    "generated": {
+      "Mistral-7B": 0.0359,
+      "BioMistral-7B": 0.0366,
+      "Llama3.1-8B": 0.0402,
+      "OpenBioLLM-8B": 0.044,
+      "Llama3.1-70B": 0.0424,
+      "OpenBioLLM-70B": 0.0443
+    }
+  },
+  "Semantic Energy": {
+    "mimic": {
+      "Mistral-7B": 0.0784,
+      "BioMistral-7B": 0.081,
+      "Llama3.1-8B": 0.0924,
+      "OpenBioLLM-8B": 0.0914,
+      "Llama3.1-70B": 0.093,
+      "OpenBioLLM-70B": 0.1075
+    },
+    "generated": {
+      "Mistral-7B": 0.0401,
+      "BioMistral-7B": 0.0436,
+      "Llama3.1-8B": 0.0458,
+      "OpenBioLLM-8B": 0.0444,
+      "Llama3.1-70B": 0.053,
+      "OpenBioLLM-70B": 0.0559
+    }
+  },
+  "Semantic Entropy": {
+    "mimic": {
+      "Mistral-7B": 0.0703,
+      "BioMistral-7B": 0.0868,
+      "Llama3.1-8B": 0.0735,
+      "OpenBioLLM-8B": 0.0854,
+      "Llama3.1-70B": 0.0607,
+      "OpenBioLLM-70B": 0.0598
+    },
+    "generated": {
+      "Mistral-7B": 0.0943,
+      "BioMistral-7B": 0.105,
+      "Llama3.1-8B": 0.094,
+      "OpenBioLLM-8B": 0.105,
+      "Llama3.1-70B": 0.1,
+      "OpenBioLLM-70B": 0.0896
+    }
+  },
+  "Sliding Window Entropy": {
+    "mimic": {
+      "Mistral-7B": 0.0897,
+      "BioMistral-7B": 0.0899,
+      "Llama3.1-8B": 0.1171,
+      "OpenBioLLM-8B": 0.1267,
+      "Llama3.1-70B": 0.109,
+      "OpenBioLLM-70B": 0.1244
+    },
+    "generated": {
+      "Mistral-7B": 0.065,
+      "BioMistral-7B": 0.0678,
+      "Llama3.1-8B": 0.0728,
+      "OpenBioLLM-8B": 0.1041,
+      "Llama3.1-70B": 0.0743,
+      "OpenBioLLM-70B": 0.1147
+    }
+  },
+  "Decomposing Uncertainty": {
+    "mimic": {
+      "Mistral-7B": 0.0644,
+      "BioMistral-7B": 0.0825,
+      "Llama3.1-8B": 0.0743,
+      "OpenBioLLM-8B": 0.0775,
+      "Llama3.1-70B": 0.0598,
+      "OpenBioLLM-70B": 0.0598
+    },
+    "generated": {
+      "Mistral-7B": 0.1032,
+      "BioMistral-7B": 0.1322,
+      "Llama3.1-8B": 0.0957,
+      "OpenBioLLM-8B": 0.141,
+      "Llama3.1-70B": 0.0914,
+      "OpenBioLLM-70B": 0.0914
+    }
+  },
+  "SE Probes": {
+    "mimic": {
+      "Mistral-7B": 0.0474,
+      "BioMistral-7B": 0.1313,
+      "Llama3.1-8B": 0.0805,
+      "OpenBioLLM-8B": 0.0587,
+      "Llama3.1-70B": 0.1015,
+      "OpenBioLLM-70B": 0.0837
+    },
+    "generated": {
+      "Mistral-7B": 0.2067,
+      "BioMistral-7B": 0.1075,
+      "Llama3.1-8B": 0.1386,
+      "OpenBioLLM-8B": 0.1553,
+      "Llama3.1-70B": 0.183,
+      "OpenBioLLM-70B": 0.1709
+    }
+  },
+  "Uncertainty Aware Heads": {
+    "mimic": {
+      "Mistral-7B": 0.0834,
+      "BioMistral-7B": 0.081,
+      "Llama3.1-8B": 0.0837,
+      "OpenBioLLM-8B": 0.0852,
+      "Llama3.1-70B": 0.0811,
+      "OpenBioLLM-70B": 0.0855
+    },
+    "generated": {
+      "Mistral-7B": 0.0624,
+      "BioMistral-7B": 0.0575,
+      "Llama3.1-8B": 0.0615,
+      "OpenBioLLM-8B": 0.0682,
+      "Llama3.1-70B": 0.0704,
+      "OpenBioLLM-70B": 0.0703
+    }
+  },
+  "Attention Chain": {
+    "mimic": {
+      "Mistral-7B": 0.0918,
+      "BioMistral-7B": 0.0874,
+      "Llama3.1-8B": 0.1012,
+      "OpenBioLLM-8B": 0.1012,
+      "Llama3.1-70B": 0.1012,
+      "OpenBioLLM-70B": 0.1012
+    },
+    "generated": {
+      "Mistral-7B": 0.0423,
+      "BioMistral-7B": 0.0388,
+      "Llama3.1-8B": 0.043,
+      "OpenBioLLM-8B": 0.043,
+      "Llama3.1-70B": 0.043,
+      "OpenBioLLM-70B": 0.043
+    }
+  }
+}
