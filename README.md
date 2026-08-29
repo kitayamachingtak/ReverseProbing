@@ -1,3 +1,5 @@
+This work is accepted to Findings of EMNLP 2026
+
 @misc{xiao2026reverseprobingsupervisedtokenlevel,
       title={Reverse Probing: Supervised Token-level Uncertainty Quantification for Large Language Models in Clinical Text}, 
       author={Bushi Xiao and Sarvesh Soni and Daisy Zhe Wang},
