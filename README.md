@@ -108,9 +108,9 @@ draw_image/
     fig_feature_curve.py       F1 against feature count
     fig_importance_heatmap.py  importance per family, all three classifiers
 
-mimic/                         input datasets
-features_by_script/            
-outputs/                      
+mimic/                         put datasets here
+features_by_script/            collected features
+outputs/                      with baseline results
 figures/                      
 ```
 
