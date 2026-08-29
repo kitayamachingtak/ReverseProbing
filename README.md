@@ -1,10 +1,6 @@
 # Reverse Probing
 
-Token-level uncertainty quantification for clinical summaries. The method
-feeds an existing summary back through a frozen LLM twice, once with the
-source record (Brief Hospital Course) prepended and once without, and reads a
-feature vector at every token position. A supervised classifier then predicts
-whether each token is supported by the record.
+Token-level uncertainty quantification for clinical summaries. 
 
 Paper: *Reverse Probing: Supervised Token-level Uncertainty Quantification for
 Large Language Models in Clinical Text*
