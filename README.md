@@ -81,13 +81,13 @@ train_classifiers.py
 make_figures.sh               
 
 different_feature_numbers/     feature extraction, one script per feature count
-    model_presets.py          
-    medical_detector.py        scispaCy + UMLS/MedDRA entity detection
+    model_presets.py           config
+    medical_detector.py        medical entity detection
     collect_token_features_93.py
     collect_token_features_120.py
     collect_token_features_204.py
-    collect_token_features_454.py     max configuration, 7-8B models
-    collect_token_features_886.py     max configuration, 70B models
+    collect_token_features_454.py    7-8B models
+    collect_token_features_886.py     70B models
 
 classifier/                    training and evaluation
     data.py                  
