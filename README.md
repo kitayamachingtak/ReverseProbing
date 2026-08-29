@@ -15,9 +15,7 @@ Large Language Models in Clinical Text*
 pip install -r requirements.txt
 ```
 
-This work accesses the internal activation of LLMs, so API is not useful here. Models here is resolved through the normal Hugging Face cache. On a cluster with a
-shared download directory, point `HF_HUB_CACHE` at it so the ids in
-`config.py` hit local snapshots without touching the network:
+This work accesses the internal activation of LLMs, so API is not useful here. Models here is resolved through the normal Hugging Face cache. 
 
 ```bash
 export HF_HUB_CACHE=/path/to/huggingface
@@ -71,13 +69,13 @@ bash make_figures.sh
 ## Layout
 
 ```
-config.py                      paths, model registry, shared constants
-extract_features.py            stage 1 runner
-train_classifiers.py           stage 2 runner
-make_figures.sh                stage 3, calls the plotting scripts
+config.py                      
+extract_features.py            
+train_classifiers.py           
+make_figures.sh               
 
 different_feature_numbers/     feature extraction, one script per feature count
-    model_presets.py           layer and head indices, chosen by model depth
+    model_presets.py          
     medical_detector.py        scispaCy + UMLS/MedDRA entity detection
     collect_token_features_93.py
     collect_token_features_120.py
@@ -86,24 +84,24 @@ different_feature_numbers/     feature extraction, one script per feature count
     collect_token_features_886.py     max configuration, 70B models
 
 classifier/                    training and evaluation
-    data.py                    load feature pickles into matrices
-    metrics.py                 precision, recall, F1, AUCROC, AUPRC
+    data.py                  
+    metrics.py                
     search.py                  hyperparameter grid, selection by F1
-    xgboost_clf.py             grids are unchanged from the paper's runs
+    xgboost_clf.py            
     catboost_clf.py
     logistic_clf.py
-    importance.py              gain / PredictionValuesChange / |beta|
+    importance.py             
 
-draw_image/                    figures
-    common.py                  loaders, feature-to-family mapping, palettes
+draw_image/                 
+    common.py                  
     fig_auprc_bars.py          AUPRC across base LLMs
     fig_feature_curve.py       F1 against feature count
     fig_importance_heatmap.py  importance per family, all three classifiers
 
-mimic/                         input datasets (not committed)
-features_by_script/            extracted features, per model (not committed)
-outputs/                       metrics and importance json
-figures/                       rendered pdf and png (not committed)
+mimic/                         input datasets
+features_by_script/            
+outputs/                      
+figures/                      
 ```
 
 ### baselines.json
