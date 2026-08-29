@@ -1,0 +1,15 @@
+# generated data and figures
+features_by_script/
+figures/
+outputs/*.pkl
+
+# datasets are credentialed, never commit them
+mimic/*.jsonl
+
+# python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+
+# environment
+.env

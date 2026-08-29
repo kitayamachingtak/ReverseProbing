@@ -1,0 +1,20 @@
+torch==2.12.0
+transformers==4.44.0
+accelerate==1.13.0
+sentence-transformers==5.5.0
+safetensors==0.7.0
+
+spacy==3.7.5
+scispacy==0.6.2
+# NER model, install after scispacy:
+#   pip install https://s3-us-west-2.amazonaws.com/ai2-s2-scispacy/releases/v0.5.4/en_ner_bc5cdr_md-0.5.4.tar.gz
+# Optional, only if MedicalTermDetector(use_umls_linker=True):
+#   pip install "scispacy[umls]" nmslib-metabrainz==2.1.3
+
+xgboost==3.2.0
+catboost==1.2.10
+scikit-learn==1.7.2
+
+numpy==1.26.4
+scipy==1.12.0
+matplotlib==3.8.4
