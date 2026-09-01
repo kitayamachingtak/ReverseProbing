@@ -47,8 +47,7 @@ mimic/hallucinations_generated_di.jsonl
 
 ## Files
 
-Three stages, in order. Each skips work that already exists, so all of them
-can be interrupted and resumed.
+Three stages, in order. 
 
 ```bash
 # 1. extract features 
@@ -114,8 +113,8 @@ figures/
 
 Baseline scores are not produced by this repository, so `outputs/baselines.json`
 is committed directly. 
-Baseline implementations are not included here. They are adaptations of
-published methods to pre-existing text, described in Section 3.4 of the paper.
+Baselines are adaptations of
+published methods, described in Section 3.4 of the paper.
 
 ## Figures
 
