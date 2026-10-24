@@ -142,16 +142,25 @@ the primary metric throughout.
 
 ## Citation
 
-This work is accepted by the Findings of EMNLP 2026, but there is currently no official BibTeX; if you need to cite this, please use:
 ```bibtex
-@misc{xiao2026reverseprobingsupervisedtokenlevel,
-      title={Reverse Probing: Supervised Token-level Uncertainty Quantification for Large Language Models in Clinical Text}, 
-      author={Bushi Xiao and Sarvesh Soni and Daisy Zhe Wang},
-      year={2026},
-      eprint={2605.28740},
-      archivePrefix={arXiv},
-      primaryClass={cs.CL},
-      url={https://arxiv.org/abs/2605.28740}, 
+@inproceedings{xiao-etal-2026-reverse,
+    title = "Reverse Probing: Supervised Token-level Uncertainty Quantification for Large Language Models in Clinical Text",
+    author = "Xiao, Bushi  and
+      Soni, Sarvesh  and
+      Wang, Daisy Zhe",
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.407/",
+    pages = "8599--8616",
+    ISBN = "979-8-89176-462-0",
+    abstract = "As large language models are increasingly deployed for clinical text, ensuring they can reliably signal their own uncertainty becomes critical. Most existing uncertainty quantification (UQ) methods are designed for open-domain generation and cannot localize uncertainty at the token or span level in long clinical text. We propose Reverse Probing, the first uncertainty quantification framework specialized for clinical summarization, which estimates token-level uncertainty directly from pre-existing clinical summaries. Rather than sampling new outputs, Reverse Probing treats the text as a probe into the model{'}s internal state, extracting uncertainty features from four categories of signals. We evaluate Reverse Probing on two expert-annotated clinical datasets and outperform eight adapted baselines, achieving up to $4\times$ higher AUPRC while running over $15\times$ faster than sampling-based methods. Feature analysis reveals that the log-logit difference induced by the source record and the neighborhood context are the most consistent predictors across all models. This study offers interpretable insights into how models internally respond to unsupported clinical content."
 }
 ```
 
